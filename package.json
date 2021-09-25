@@ -1,0 +1,23 @@
+{
+  "name": "vue-firebase-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BonkHo/vue-firebase-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BonkHo/vue-firebase-testing/issues"
+  },
+  "homepage": "https://github.com/BonkHo/vue-firebase-testing#readme",
+  "dependencies": {
+    "firebase": "^9.1.0"
+  }
+}
