@@ -1,5 +1,5 @@
 import { initalizeApp } from "firebase/app";
-import { getFireStore } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBcH8jY42roKKdI6X3an5t3LxuWjrpKgZU",
@@ -14,3 +14,12 @@ const firebaseConfig = {
 const firebaseApp = initalizeApp(firebaseConfig);
 
 const db = getFirestore(firebaseApp);
+
+// Vue
+
+var app = new Vue({
+    el: "#app",
+    data: {
+        message: "hello vue",
+    },
+});

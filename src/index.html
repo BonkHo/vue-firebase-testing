@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- petite-vue import-->
-        <script src="https://unpkg.com/petite-vue" defer init></script>
+        <!-- <script src="https://unpkg.com/petite-vue" defer init></script> -->
         <!--Bootstrap CSS only import-->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -13,7 +13,23 @@
             integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
             crossorigin="anonymous"
         />
-        <title>Document</title>
+        <title>Petite Vue</title>
     </head>
-    <body></body>
+    <body>
+        <!-- <div v-scope="{count: 0}">
+            {{count}} <button @click="count++">Increment</button>
+        </div> -->
+        <div id="example">
+            {{count}} <button @click="increment">Increment</button>
+        </div>
+        <script type="module">
+            import { createApp } from "https://unpkg.com/petite-vue?module";
+            createApp({
+                count: 0,
+                increment() {
+                    this.count++;
+                },
+            }).mount("#example");
+        </script>
+    </body>
 </html>
